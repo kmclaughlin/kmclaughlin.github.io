@@ -1,6 +1,4 @@
-<h1 name="software_projects">
-	<a  class="anchor" href="#software_projects">Software Projects</a>
-</h1>
+<h1><a name="software_projects" href="#software_projects">Software Projects</a></h1>
 
 ---
 <h2><a href="/sample_page">Maze Robot Simulator</a></h2>
