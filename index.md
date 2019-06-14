@@ -1,4 +1,6 @@
-<h1><span>Software Projects</span><a name="software_projects" href="#software_projects">#</a></h1>
+<h1 name="software_projects">
+	<a  class="anchor" href="#software_projects">Software Projects</a>
+</h1>
 
 ---
 <h2><a href="/sample_page">Maze Robot Simulator</a></h2>
@@ -10,8 +12,9 @@ A maze robot simulator built for the Queen's Robotics Society to help with the N
 <h2><a href="/pdf/sample_presentation.pdf">Project 2 Title</a></h2>
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
-
-<h1><span>Hardware Projects</span><a name="hardware_projects" href="#hardware_projects">#</a></h1>
+<h1 name="hardware_projects">
+	<a  class="anchor" href="#hardware_projects">Hardware Projects</a>
+</h1>
 
 ---
 <h2><a href="https://kmclaughlin.github.io/sample_page">3D Printers</a></h2>
