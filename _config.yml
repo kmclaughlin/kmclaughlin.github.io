@@ -6,6 +6,7 @@ description: > # your text below (remove <br> elements if you don't need line br
   Queen's University Belfast
   <br><br>
   I have a passion for making. Check out some of my projects!
+  <br><br>
   <a href="https://www.linkedin.com/in/kevin-mclaughlin-/">View My LinkedIn Profile</a> 
   
 theme: jekyll-theme-minimal
