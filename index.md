@@ -19,13 +19,16 @@
 </div>
 
 <div>
-	<a href="/projects/sample_page#title" class="card">
+	<a href="/projects/NI_property_analysis#title" class="card">
 	  <div class="card">
-		<h2>Project 2 Title</h2>
-		<img src="images/dummy_thumbnail.jpg?raw=true"/>
+		<h2>Data Analysis of House Values in NI</h2>
+		<img src="images/NI_properties.png?raw=true"/>
 		<br>
 		<p>
-		Some Lorum Ipsum
+		Exploring Northern domestic property value using Land and Property Services NI data and other publically available datasets.
+		I started this as a university project but it was interesting to explore the data and find hidden patterns. There is lots of
+		potential to explore it further. I am still writing tidying up this project so currently there is only the initial data preparation
+		and light exploration. More to come soon.
 		</p>
 
 	  </div>
