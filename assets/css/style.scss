@@ -235,7 +235,6 @@ footer {
   }
 
   header {
-	padding-right: 0px;
     padding-bottom:30px;
   }
 
@@ -258,7 +257,7 @@ footer {
   
   header img, header div.description {
      display: inline-block; 
-	 width: 48%;
+	 width: auto;
   }
 }
 
@@ -277,6 +276,7 @@ footer {
   
   header img, header div.description {
     display: block;
+    width: auto;
   }
 
   pre, code {
