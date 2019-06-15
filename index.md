@@ -10,6 +10,7 @@
 
   </div>
 </a>
+
 ---
 <h2><a href="/pdf/sample_presentation.pdf">Project 2 Title</a></h2>
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
@@ -27,5 +28,3 @@ A history of my involvement with 3D printers since 2011
 
 
 
-.w3-light-grey{color:#000!important;background-color:#f1f1f1!important}
-.w3-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
