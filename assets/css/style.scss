@@ -256,16 +256,9 @@ footer {
     top:52px;
   }
   
-  header img {
-	position: relative;
-    float: left;
-    width: 50%
-  }
-  
-  header div.description {
-	position: relative;
-    float: right;
-    width: 50%	 
+  header img, header div.description {
+     display: inline-block; 
+	 width: 50%;
   }
 }
 
@@ -283,8 +276,7 @@ footer {
   }
   
   header img, header div.description {
-    float: none;
-	width: auto;
+    display: block;
   }
 
   pre, code {
