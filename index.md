@@ -1,11 +1,15 @@
 <h1><a name="software_projects" href="#software_projects">Software Projects</a></h1>
 
 ---
-<h2><a href="/sample_page">Maze Robot Simulator</a></h2>
-<img src="images/robot_maze_thumb.png?raw=true"/>
+<a href="/sample_page">
+  <div class="w3-light-grey w3-hover-shadow w3-padding-64 w3-center" style="width:70%">
+	<h2>Maze Robot Simulator</h2>
+	<img src="images/robot_maze_thumb.png?raw=true"/>
 
-A maze robot simulator built for the Queen's Robotics Society to help with the NI Robotics League maze competition. I noticed the maze to be used in the competition only had 20 moveable gates (which could be in 1 of 2 positions). The rest of the maze was fixed. This gave a total of 2<sup>20</sup> (1048576) different configurations. With the simulator we could find the best algorithms to solve the maze.
+	A maze robot simulator built for the Queen's Robotics Society to help with the NI Robotics League maze competition. I noticed the maze to be used in the competition only had 20 moveable gates (which could be in 1 of 2 positions). The rest of the maze was fixed. This gave a total of 2<sup>20</sup> (1048576) different configurations. With the simulator we could find the best algorithms to solve the maze.
 
+  </div>
+</a>
 ---
 <h2><a href="/pdf/sample_presentation.pdf">Project 2 Title</a></h2>
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
@@ -20,3 +24,8 @@ A maze robot simulator built for the Queen's Robotics Society to help with the N
 A history of my involvement with 3D printers since 2011
 
 ---
+
+
+
+.w3-light-grey{color:#000!important;background-color:#f1f1f1!important}
+.w3-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
