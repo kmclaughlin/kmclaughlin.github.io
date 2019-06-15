@@ -204,12 +204,22 @@ footer {
     width:auto;
     margin:0 auto;
   }
+  
   body {
-	  padding: 50px 0px 50px 50px;
-	}
+    padding: 50px 0px 50px 10px;
+  }
+  
+  section {
+    width:auto;
+    float:right;
+    padding-bottom:50px;
+  }
+  header {
+    width:200px;
+  }
 }
 
-@media print, screen and (max-width: 1160px) {
+@media print, screen and (max-width: 760px) {
 
   div.wrapper {
     width:auto;
