@@ -199,7 +199,7 @@ footer {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
-@media print, screen and (max-width: 1260px) {
+@media print, screen and (max-width: 1160px) {
 
   div.wrapper {
     width:auto;
@@ -245,7 +245,6 @@ footer {
 
   header ul, header p.view {
     position:static;
-	width: 270px;
   }
 
   pre, code {
