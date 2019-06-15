@@ -3,15 +3,20 @@
 ---
 <div>
 <a href="/sample_page">
-  <div class="w3-light-grey w3-hover-shadow w3-padding-64 w3-center" style="width:70%">
+  <div class="w3-light-grey w3-hover-shadow w3-padding-64 w3-center">
 	<h2>Maze Robot Simulator</h2>
 	<img src="images/robot_maze_thumb.png?raw=true"/>
-
-	A maze robot simulator built for the Queen's Robotics Society to help with the NI Robotics League maze competition. I noticed the maze to be used in the competition only had 20 moveable gates (which could be in 1 of 2 positions). The rest of the maze was fixed. This gave a total of 2<sup>20</sup> (1048576) different configurations. With the simulator we could find the best algorithms to solve the maze.
+	<br>
+	<p>
+	A maze robot simulator built for the Queen's Robotics Society to help with the NI Robotics League maze competition. 
+	I noticed the maze to be used in the competition only had 20 moveable gates (which could be in 1 of 2 positions). 
+	The rest of the maze was fixed. This gave a total of 2<sup>20</sup> (1048576) different configurations. 
+	With the simulator we could find the best algorithms to solve the maze.
+	<p>
 
   </div>
 </a>
-<div>
+</div>
 
 ---
 <h2><a href="/pdf/sample_presentation.pdf">Project 2 Title</a></h2>
