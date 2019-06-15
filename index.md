@@ -2,7 +2,7 @@
 
 ---
 <div>
-	<a href="/sample_page">
+
 	  <div class="w3-light-grey w3-hover-shadow w3-padding-64 w3-center">
 		<h2>Maze Robot Simulator</h2>
 		<img src="images/robot_maze_thumb.png?raw=true"/>
@@ -15,7 +15,7 @@
 		</p>
 
 	  </div>
-	</a>
+
 </div>
 
 ---
