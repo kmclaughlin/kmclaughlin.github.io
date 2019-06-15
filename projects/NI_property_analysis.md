@@ -1,9 +1,9 @@
 
-# Northern Ireland Domestic Property Value Data
+<h1><a name="title" href="#title">Northern Ireland Domestic Property Value Data</a></h1>
 
 The Land and Property Service NI keeps a searchable dataset of all the domestic properties in Northern Ireland with details needed for determining the payable rates. This dataset looks interesting to explore with lots of possibilities for linking other data using the addresses of the properties.
 
-![image.png](attachment:image.png)
+![png](images/house_data_sample.png)
 
 
 
@@ -525,7 +525,7 @@ sns.boxplot(y= properties_df[size_rows]['Property Size'], ax=axes[1])
 
 
 
-![png](output_40_1.png)
+![png](images/output_40_1.png)
 
 
 Unsurprisingly therre are some outliers. The value outliers seem reasonable, I can imagine there is a house in Northern Ireland valued at £3,000,000 (though I wonder if they know they are paying the highest rates in the country?). I have difficulty imagining on the other hand that there are any properties in Northern Ireland that are 22 km<sup>2</sup>. We won't overwrite this data as it might be interesting to look at at some point but instead we can filter it out. Also lets use violin plots instead of box plots so we can see the shape of the data better with the probability density.
@@ -550,7 +550,7 @@ sns.violinplot(y= properties_df[size_rows]['Property Size'], ax=axes[1])
 
 
 
-![png](output_42_1.png)
+![png](images/output_42_1.png)
 
 
 These plots are quite interesting but nothing too unexpected. As expeted the vast majority of properties are in a relatively small range of values and sizes with a very long thing tail to the super expensive, very large properties that are very rare.
