@@ -1,6 +1,7 @@
 <h1><a name="software_projects" href="#software_projects">Software Projects</a></h1>
 
 ---
+<div>
 <a href="/sample_page">
   <div class="w3-light-grey w3-hover-shadow w3-padding-64 w3-center" style="width:70%">
 	<h2>Maze Robot Simulator</h2>
@@ -10,6 +11,7 @@
 
   </div>
 </a>
+<div>
 
 ---
 <h2><a href="/pdf/sample_presentation.pdf">Project 2 Title</a></h2>
