@@ -1,9 +1,9 @@
 <h1><a name="software_projects" href="#software_projects">Software Projects</a></h1>
 
 ---
-<div>
+<div class="card">
 	<a href="/sample_page/#title" class="card">
-	  <div class="card">
+	  <div>
 		<h2>Maze Robot Simulator</h2>
 		<img src="images/maze_robot_sim.gif?raw=true"/>
 		<br>
