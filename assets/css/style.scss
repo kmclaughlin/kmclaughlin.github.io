@@ -213,15 +213,15 @@ footer {
     width:auto;
     float:right;
     padding-bottom:50px;
-    padding-left:190px;
+    padding-left:280px;
   }
   
   header {
-    width:180px;
+    width:270px;
   }
 }
 
-@media print, screen and (max-width: 760px) {
+@media print, screen and (max-width: 960px) {
 
   div.wrapper {
     width:auto;
@@ -267,6 +267,16 @@ footer {
 
   header ul, header p.view {
     position:static;
+  }
+  
+  header.title {
+    float: left;
+    width: 30%;
+  }
+  
+  header.description {
+    float: right;
+    width: 70%;
   }
 
   pre, code {
