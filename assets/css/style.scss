@@ -256,7 +256,7 @@ footer {
     top:52px;
   }
   
-  header img div.description{
+  header img, header div.description{
      display: inline-block; 
   }
 }
@@ -267,7 +267,6 @@ footer {
   }
 
   header {
-    padding-right:0px;
     padding:0;
   }
 
@@ -275,7 +274,7 @@ footer {
     position:static;
   }
   
-  header img div.description {
+  header img, header div.description {
     display: none;
   }
 
