@@ -236,6 +236,7 @@ footer {
 
   header {
     padding-right:320px;
+    padding-bottom:30px;
   }
 
   section {
@@ -254,6 +255,16 @@ footer {
     right:50px;
     top:52px;
   }
+  
+  header img {
+    float: left;
+    width: 50%;
+  }
+  
+  header div.description {
+    float: right;
+    width: 50%;
+  }
 }
 
 @media print, screen and (max-width: 720px) {
@@ -269,14 +280,14 @@ footer {
     position:static;
   }
   
-  header div.title {
-    float: left;
-    width: 30%;
+  header img {
+    float: none;
+    width: auto;
   }
   
   header div.description {
-    float: right;
-    width: 70%;
+    float: none;
+    width: auto;
   }
 
   pre, code {
