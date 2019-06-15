@@ -5,9 +5,7 @@
 	<a href="/sample_page/#title" class="card">
 	  <div class="card">
 		<h2>Maze Robot Simulator</h2>
-		<video>
-		  <source src="images/maze_robot_sim.mp4" type="video/mp4" />
-		</video>
+		<img src="images/robot_maze_thumb.gif?raw=true"/>
 		<br>
 		<p>
 		A maze robot simulator built for the Queen's Robotics Society to help with the NI Robotics League maze competition. 
