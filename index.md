@@ -18,7 +18,7 @@
 	</a>
 </div>
 
----
+
 <div>
 	<a href="/sample_page/#title" class="card">
 	  <div class="card">
@@ -33,14 +33,23 @@
 	</a>
 </div>
 
-
+<br><br>
 <h1><a name="hardware_projects" href="#hardware_projects">Hardware Projects</a></h1>
 
 ---
-<h2><a href="https://kmclaughlin.github.io/sample_page">3D Printers</a></h2>
-<img src="images/robot_maze_thumb.png?raw=true"/>
+<div>
+	<a href="/sample_page/#title" class="card">
+	  <div class="card">
+		<h2>3D Printers</h2>
+		<img src="images/dummy_thumbnail.jpg?raw=true"/>
+		<br>
+		<p>
+		A history of my involvement with 3D printers since 2011
+		</p>
 
-A history of my involvement with 3D printers since 2011
+	  </div>
+	</a>
+</div>
 
 ---
 
