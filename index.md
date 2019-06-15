@@ -2,7 +2,7 @@
 
 ---
 <div class="card_container">
-	<a href="/sample_page/#title" class="card">
+	<a href="projects/sample_page/" class="card">
 	  <div class="card">
 		<h2>Maze Robot Simulator</h2>
 		<img src="images/maze_robot_sim.gif?raw=true"/>
