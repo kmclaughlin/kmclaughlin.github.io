@@ -275,14 +275,8 @@ footer {
     position:static;
   }
   
-  header img {
-    float: none;
-    width: auto;
-  }
-  
-  header div.description {
-    float: none;
-    width: auto;
+  header img div.description {
+    display: none;
   }
 
   pre, code {
