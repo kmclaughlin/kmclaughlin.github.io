@@ -5,6 +5,9 @@
 	<a href="/sample_page/#title" class="card">
 	  <div class="card">
 		<h2>Maze Robot Simulator</h2>
+		<video>
+		  <source src="images/supercoolvideo.mp4" type="video/mp4" />
+		</video>
 		<img src="images/robot_maze_thumb.png?raw=true"/>
 		<br>
 		<p>
@@ -17,7 +20,6 @@
 	  </div>
 	</a>
 </div>
-
 
 <div>
 	<a href="/sample_page/#title" class="card">
