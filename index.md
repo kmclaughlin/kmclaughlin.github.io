@@ -2,7 +2,7 @@
 
 ---
 <div>
-	<a href="/sample_page" class="card">
+	<a href="/sample_page/#title" class="card">
 	  <div class="card">
 		<h2>Maze Robot Simulator</h2>
 		<img src="images/robot_maze_thumb.png?raw=true"/>
@@ -19,8 +19,19 @@
 </div>
 
 ---
-<h2><a href="/pdf/sample_presentation.pdf">Project 2 Title</a></h2>
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<div>
+	<a href="/sample_page/#title" class="card">
+	  <div class="card">
+		<h2>Project 2 Title</h2>
+		<img src="images/dummy_thumbnail.jpg?raw=true"/>
+		<br>
+		<p>
+		Some Lorum Ipsum
+		</p>
+
+	  </div>
+	</a>
+</div>
 
 
 <h1><a name="hardware_projects" href="#hardware_projects">Hardware Projects</a></h1>
