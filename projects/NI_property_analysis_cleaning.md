@@ -2,7 +2,7 @@
 
 Loading and properly cleaning the data is maybe the most important step of good data analysis. If you don't know what the data looks like and what the columns actually contain, instead of what you think they contain, you can't trust any of your conclusions. Here we will be loading the raw data in and examining each column for mixed data types, inconsistent data entry (fixing capitalisation or spelling mistakes), making numeric columns actually numeric and looking at missing values and what can be done to fill them out.
 
-[Main project page](NI_property_analysis.md)
+[Main project page](NI_property_analysis#title)
 <h2><a name="#Contents" href="#Contents">Contents</a></h2>
 
 1. [Loading the Data](#Loading-the-Data)
