@@ -1,3 +1,12 @@
+---
+permalink: /NI_property_analysis
+layout: default
+title: "NI Property Value Analysis"
+redirect_from:
+  - /NI_property_analysis/
+  - /NI_property_analysis.html
+---
+
 <h1><a name="title" href="#title">Northern Ireland Domestic Property Value Data</a></h1>
 
 The Land and Property Service NI keeps a searchable dataset of all the domestic properties in Northern Ireland with details needed for determining the payable rates. This dataset looks interesting to explore with lots of possibilities for linking other data using the addresses of the properties.
