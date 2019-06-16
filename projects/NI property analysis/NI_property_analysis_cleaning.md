@@ -1,3 +1,12 @@
+---
+permalink: /NI_property_analysis_cleaning
+layout: default
+title: "NI Property Value Analysis - Loading and Cleaning"
+redirect_from:
+  - /NI_property_analysis_cleaning/
+  - /NI_property_analysis_cleaning.html
+---
+
 <h1><a name="title" href="#title">Northern Ireland Domestic Property Value Data <br>Loading and Cleaning</a></h1>
 
 Loading and properly cleaning the data is maybe the most important step of good data analysis. If you don't know what the data looks like and what the columns actually contain, instead of what you think they contain, you can't trust any of your conclusions. Here we will be loading the raw data in and examining each column for mixed data types, inconsistent data entry (fixing capitalisation or spelling mistakes), making numeric columns actually numeric and looking at missing values and what can be done to fill them out.
