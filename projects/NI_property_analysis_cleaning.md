@@ -1,10 +1,10 @@
-
-<h1>Northern Ireland Domestic Property Value Data <br>Loading and Cleaning</h1>
+<h1><a name="#" href="#">Northern Ireland Domestic Property Value Data <br>Loading and Cleaning<a></h1>
 
 Loading and properly cleaning the data is maybe the most important step of good data analysis. If you don't know what the data looks like and what the columns actually contain, instead of what you think they contain, you can't trust any of your conclusions. Here we will be loading the raw data in and examining each column for mixed data types, inconsistent data entry (fixing capitalisation or spelling mistakes), making numeric columns actually numeric and looking at missing values and what can be done to fill them out.
 
 [Main project page](NI_property_analysis.md)
-# Contents
+<h2><a name="#Contents" href="#Contents">Contents<a></h2>
+
 1. [Loading the Data](#Loading-the-Data)
 2. [Clean Up](#Clean-Up)
     1. [Look at the data](#Look-at-the-data)
@@ -13,8 +13,7 @@ Loading and properly cleaning the data is maybe the most important step of good 
 3. [Save to File](#Save-to-File)
 
 
-
-# Loading the Data
+<h2><a name="#Loading-the-Data" href="#Loading-the-Data">Loading the Data<a></h2>
 <a href="#">Back to top</a>
 
 We don't need everything in the dataset, such as district/ward/street IDs so only loading in specific columns
@@ -185,14 +184,14 @@ properties_df.head()
 
 
 
-# Clean Up
+<h2><a name="#Clean-Up" href="#Clean-Up">Clean Up<a></h2>
 <a href="#">Back to top</a>
 
 Straight away there are some issues evident in the top 5 rows. Property size should be a number but includes the text "square meters". Building Name and Sub-building Name are NaN are they all NaN? What is the difference between "Full" central heating and marked "Yes". Capital Value Non-Exempt has a comma in it so won't be treated as numeric.
 
 There are probably lots of other errors in the rest of the columns that need fixed that isn't evident in the top 5 rows. Time to dig further
 
-## Look at the data
+<h3><a name="#Look-at-the-data" href="#Look-at-the-data">Look at the data<a></h3>
 <a href="#">Back to top</a>
 
 The first thing to do is look at the shape of the data. How many rows are we working with? Number of unique values in each column? Number of nulls? What do we expect for these values?
@@ -233,7 +232,7 @@ My knowledge of NI geography isn't great but I'm pretty sure there aren't 12 cou
 And why are there 7 options for central heating and 4 for whether the property has a garage?
 
 
-## Investigating NI's 6 new counties
+<h3><a name="#Investigating-NI-s-6-new-counties" href="#Investigating-NI-s-6-new-counties">Investigating NI's 6 new counties<a></h3>
 <a href="#">Back to top</a>
 
 
@@ -330,8 +329,7 @@ properties_df["Capital Value Non-Exempt"] = pd.to_numeric(properties_df["Capital
 properties_df["Capital Value Exempt"] = pd.to_numeric(properties_df["Capital Value Exempt"])
 properties_df["Property Size"] = pd.to_numeric(properties_df["Property Size"])
 ```
-
-## Missing data and what can be fixed
+<h3><a name="#Missing-data-and-what-can-be-fixed" href="#Missing-data-and-what-can-be-fixed">Missing data and what can be fixed<a></h3>
 <a href="#">Back to top</a>
 
 Next we want to look at what data is missing. How many empty cells does each column have, which columns does that matter in and can we fix it?
@@ -494,7 +492,7 @@ print("Number of missing postcodes: " + str(properties_df["Postcode"].isnull().s
 
 Down to only 218 missing postcodes from 52,182. Not bad!
 
-# Save to File
+<h2><a name="#Save-to-File" href="#Save-to-File">Save to File<a></h2>
 <a href="#">Back to top</a>
 
 Save this to file so we don't have to run all this everytime we restart the kernel.
