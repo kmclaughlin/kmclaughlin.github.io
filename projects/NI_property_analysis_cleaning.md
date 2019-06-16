@@ -5,13 +5,14 @@ Loading and properly cleaning the data is maybe the most important step of good 
 [Main project page](NI_property_analysis#title)
 <h2><a name="Contents" href="#Contents">Contents</a></h2>
 
+
 1. [Loading the Data](#Loading-the-Data)
 2. [Clean Up](#Clean-Up)
     1. [Look at the data](#Look-at-the-data)
     2. [Investigating NI's 6 new counties](#Investigating-NI-s-6-new-counties)
     3. [Missing data and what can be fixed](#Missing-data-and-what-can-be-fixed)
 3. [Save to File](#Save-to-File)
-
+<p></p>
 
 <h2><a name="Loading-the-Data" href="#Loading-the-Data">Loading the Data</a></h2>
 <a href="#title">Back to top</a>
