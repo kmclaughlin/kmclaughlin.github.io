@@ -1,4 +1,4 @@
-<h1><a name="software_projects" href="#software_projects">Software Projects</a></h1>
+# Software Projects
 
 ---
 <div class="card_container">
@@ -36,7 +36,7 @@
 </div>
 
 <br><br>
-<h1><a name="hardware_projects" href="#hardware_projects">Hardware Projects</a></h1>
+# Hardware Projects
 
 ---
 <div>
