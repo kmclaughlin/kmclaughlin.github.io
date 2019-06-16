@@ -2,7 +2,7 @@
 
 ---
 <div class="card_container">
-	<a href="/projects/sample_page#" class="card">
+	<a href="/projects/sample_page#title" class="card">
 	  <div class="card">
 		<h2>Maze Robot Simulator</h2>
 		<img src="images/maze_robot_sim.gif?raw=true"/>
@@ -19,7 +19,7 @@
 </div>
 
 <div>
-	<a href="/projects/NI_property_analysis#" class="card">
+	<a href="/projects/NI_property_analysis#title" class="card">
 	  <div class="card">
 		<h2>Data Analysis of House Values in NI</h2>
 		<img src="images/NI_properties.png?raw=true"/>
@@ -40,7 +40,7 @@
 
 ---
 <div>
-	<a href="/projects/sample_page#" class="card">
+	<a href="/projects/sample_page#title" class="card">
 	  <div class="card">
 		<h2>3D Printers</h2>
 		<img src="images/dummy_thumbnail.jpg?raw=true"/>
