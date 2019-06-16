@@ -19,7 +19,7 @@
 </div>
 
 <div>
-	<a href="/projects/NI_property_analysis#title" class="card">
+	<a href="NI_property_analysis#title" class="card">
 	  <div class="card">
 		<h2>Data Analysis of House Values in NI</h2>
 		<img src="images/NI_properties.png?raw=true"/>
