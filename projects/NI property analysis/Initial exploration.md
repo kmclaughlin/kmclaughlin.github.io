@@ -9,8 +9,9 @@ redirect_from:
 
 <h1><a name="title" href="#title">Northern Ireland Domestic Property Value Data <br>Initial Exploration</a></h1>
 
-The Land and Property Service NI keeps a searchable dataset of all the domestic properties in Northern Ireland with details needed for determining the payable rates. This dataset looks interesting to explore with lots of possibilities for linking other data using the addresses of the properties.
+Data analysis is a tricky thing. It is easy to make assumptions about the data and what it is going to show, or even worse, to begin with a theory you are trying to prove. Good data analysis means thinking like a detective or a scientist, exploring the data to see what it is saying. What are our assumtions and expectations? Does the data confirm these? It is really important to visualise the data and ask questions about its shape; does it make sense  and can it be logically explained. After doing this repeatedly and digging ever further you can find some very interesting things! So let's start exploring.
 
+[Main project page](NI_property_analysis#title)
 
 <h1><a name="Contents" href="#Contents">Contents</a></h1>
 
