@@ -1,8 +1,22 @@
 <h1><a name="software-projects" href="#software-projects">Software Projects</a></h1>
 
 ---
+
+<div>
+	<a href="NI_property_analysis#title" class="card">
+	  <div class="card">
+		<h2>Data Analysis of House Values in NI</h2>
+		<img src="images/NI_properties.png?raw=true"/>
+		<br>
+		<p>
+		Exploring Northern domestic property value using Land and Property Services NI data and other publically available datasets. I started this as a university project but it was interesting to explore the data and find hidden patterns. There is lots of potential to explore it further. I am still writing tidying up this project so currently there is only the initial data preparation and light exploration. More to come soon.
+		</p>
+
+	  </div>
+	</a>
+</div>
 <div class="card_container">
-	<a href="/projects/sample_page#title" class="card">
+	<a href="Maze_robot_simulator#title" class="card">
 	  <div class="card">
 		<h2>Maze Robot Simulator</h2>
 		<img src="images/maze_robot_sim.gif?raw=true"/>
@@ -18,35 +32,18 @@
 	</a>
 </div>
 
-<div>
-	<a href="NI_property_analysis#title" class="card">
-	  <div class="card">
-		<h2>Data Analysis of House Values in NI</h2>
-		<img src="images/NI_properties.png?raw=true"/>
-		<br>
-		<p>
-		Exploring Northern domestic property value using Land and Property Services NI data and other publically available datasets.
-		I started this as a university project but it was interesting to explore the data and find hidden patterns. There is lots of
-		potential to explore it further. I am still writing tidying up this project so currently there is only the initial data preparation
-		and light exploration. More to come soon.
-		</p>
-
-	  </div>
-	</a>
-</div>
-
 <br><br>
 <h1><a name="hardware-projects" href="#hardware-projects">Hardware Projects</a></h1>
 
 ---
 <div>
-	<a href="/projects/sample_page#title" class="card">
+	<a href="Open_robot_platform#title" class="card">
 	  <div class="card">
-		<h2>3D Printers</h2>
-		<img src="images/dummy_thumbnail.jpg?raw=true"/>
+		<h2>My Open Robot Platform</h2>
+		<img src="images/robot_platform_animation.gif?raw=true"/>
 		<br>
 		<p>
-		A history of my involvement with 3D printers since 2011
+		Leading the Queen's Robotics Society for my 3 years at Queen's University I discovered the learning curve to get people started in robotics was too steep. Needing to learn mechanical hardware, electronics programming and some 3D modelling. I saw a need for a cheap simple robot that was easy to build with off the shelf parts and was easy to expand in anyway the builder decided. So I decided to build one!
 		</p>
 
 	  </div>
