@@ -9,7 +9,7 @@
 		<img src="images/NI_properties.png?raw=true"/>
 		<br>
 		<p>
-		Exploring Northern domestic property value using Land and Property Services NI data and other publically available datasets. I started this as a university project but it was interesting to explore the data and find hidden patterns. There is lots of potential to explore it further. I am still writing tidying up this project so currently there is only the initial data preparation and light exploration. More to come soon.
+		Exploring Northern domestic property value using Land and Property Services NI data and other publically available datasets. I started this as a university project but it was interesting to explore the data and find hidden patterns. There is lots of potential to explore it further. 
 		</p>
 
 	  </div>
