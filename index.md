@@ -2,7 +2,7 @@
 
 ---
 
-<div>
+<div class="card_container">
 	<a href="NI_property_analysis#title" class="card">
 	  <div class="card">
 		<h2>Data Analysis of House Values in NI</h2>
@@ -36,7 +36,7 @@
 <h1><a name="hardware-projects" href="#hardware-projects">Hardware Projects</a></h1>
 
 ---
-<div>
+<div class="card_container">
 	<a href="Open_robot_platform#title" class="card">
 	  <div class="card">
 		<h2>My Open Robot Platform</h2>
