@@ -17,11 +17,11 @@ The Land and Property Service NI keeps a searchable dataset of all the domestic 
 
 1. [Loading the Data](#Loading-the-Data)
 2. [Exploring the Data](#Exploring-the-Data)
-  1. [House Size by Town](#House-Size-by-Town)
-  2. [House Value by Town](#House-Value-by-Town)
-  3. [House Value per m<sup>2</sup>by Town](#House-Value-per-m2-by-Town)
-  4. [Named Properties](#Named-Properties)
-  5. [Comparing House Value and Property Size](#Comparing-House-Value-and-Property-Size)
+    1. [House Size by Town](#House-Size-by-Town)
+    2. [House Value by Town](#House-Value-by-Town)
+    3. [House Value per m<sup>2</sup>by Town](#House-Value-per-m2-by-Town)
+    4. [Named Properties](#Named-Properties)
+    5. [Comparing House Value and Property Size](#Comparing-House-Value-and-Property-Size)
 <p></p>
 
 <h1><a name="Loading-the-Data" href="#Loading-the-Data">Loading the Data</a></h1>
