@@ -267,9 +267,14 @@ footer {
     top:52px;
   }
   
-  header img, header div.description {
-     display: inline-block; 
-	 width: auto;
+  header div.description {
+    display: inline-block; 
+    width: auto;
+  }
+  header img {
+    display: inline-block; 
+    width: auto;
+    max-width: 40%;
   }
 }
 
