@@ -209,12 +209,7 @@ sns.barplot(town_count.values, town_count.index, alpha=0.8, palette="ch:.25")
 axes.set(ylabel="", xlabel="Total Properties")
 ```
 
-
-
-
-    [Text(0, 0.5, ''), Text(0.5, 0, 'Total Properties')]
-
-
+![png](images/output_3_1.png)
 
 Unsurprisingly Belfast has the most domestic property, followed by Derry. I am a little surprised to see Belfast quite so far out in front though at almost 4x second place. I also didn't realsie Bangor and Newtonabbey were so far up the list and I'm surprised to see Newry so far down too. Checking [wikipedia](https://en.wikipedia.org/wiki/List_of_localities_in_Northern_Ireland_by_population) supports these numbers with population figures though Newry is 10 in population and 17th in domestic properties. Something to look into later maybe.
 
@@ -233,13 +228,6 @@ fig, axes = plt.subplots(figsize=(17,10))
 sns.barplot(avg_house_size.values, avg_house_size.index, alpha=0.8, palette="ch:.25")
 axes.set(ylabel="", xlabel="Median House Size in sq meters")
 ```
-
-
-
-
-    [Text(0, 0.5, ''), Text(0.5, 0, 'Median House Size in sq meters')]
-
-
 
 
 ![png](images/output_9_1.png)
@@ -263,13 +251,6 @@ axes.set(ylabel="", xlabel="Median House Value /£")
 ```
 
 
-
-
-    [Text(0, 0.5, ''), Text(0.5, 0, 'Median House Value /£')]
-
-
-
-
 ![png](images/output_11_1.png)
 
 
@@ -289,13 +270,6 @@ fig, axes = plt.subplots(figsize=(17,10))
 sns.barplot(price_per_m2.values, price_per_m2.index, alpha=0.8, palette="ch:.25")
 axes.set(ylabel="", xlabel="House price per sq m £/m^2")
 ```
-
-
-
-
-    [Text(0, 0.5, ''), Text(0.5, 0, 'House price per sq m £/m^2')]
-
-
 
 
 ![png](images/output_13_1.png)
@@ -379,13 +353,6 @@ axes.set(ylabel="Median House Vlaue", xlabel="")
 ```
 
 
-
-
-    [Text(0, 0.5, 'Median House Vlaue'), Text(0.5, 0, '')]
-
-
-
-
 ![png](images/output_20_1.png)
 
 
@@ -402,13 +369,6 @@ fig, axes = plt.subplots(figsize=(17,10))
 sns.barplot(pct_duplicate_named.values, pct_duplicate_named.index, alpha=0.8, palette="ch:.25")
 axes.set(ylabel="", xlabel="Percentage of Properties with a Shared Name")
 ```
-
-
-
-
-    [Text(0, 0.5, ''), Text(0.5, 0, 'Percentage of Properties with a Shared Name')]
-
-
 
 
 ![png](images/output_22_1.png)
