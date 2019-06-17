@@ -12,6 +12,7 @@ redirect_from:
 Loading and properly cleaning the data is maybe the most important step of good data analysis. If you don't know what the data looks like and what the columns actually contain, instead of what you think they contain, you can't trust any of your conclusions. Here we will be loading the raw data in and examining each column for mixed data types, inconsistent data entry (fixing capitalisation or spelling mistakes), making numeric columns actually numeric and looking at missing values and what can be done to fill them out.
 
 [Main project page](NI_property_analysis#title)
+
 <h1><a name="Contents" href="#Contents">Contents</a></h1>
 
 
@@ -20,6 +21,8 @@ Loading and properly cleaning the data is maybe the most important step of good 
     1. [Look at the data](#Look-at-the-data)
     2. [Investigating NI's 6 new counties](#Investigating-NI-s-6-new-counties)
     3. [Missing data and what can be fixed](#Missing-data-and-what-can-be-fixed)
+    4. [Filling missing postcodes](#Filling-missing-postcodes)
+    5. [Filling missing towns](#Filling-missing-towns)
 3. [Save to File](#Save-to-File)
 <p></p>
 
@@ -193,7 +196,6 @@ properties_df.head()
 
 
 
-
 <h1><a name="Clean-Up" href="#Clean-Up">Clean Up</a></h1>
 <a href="#title">Back to top</a>
 
@@ -233,11 +235,11 @@ for item in properties_df.columns:
     Garage                         4 object
     
 
-So we have 766350 rows of 16 columns, seems about right for every house in Northern Ireland. There should be 76,6350 unique addresses too but there are 2,465‬ too few probably missing.
+So we have 766,350 rows of 16 columns, seems about right for every house in Northern Ireland. There should be 766,350 unique addresses too but there are 2,465‬ too few.
 
 11 districts, 432 wards, 22472 streets. I know the districts is correct and the others look about right, though these will only be wards and streets with houses on them.
 
-My knowledge of NI geography isn't great but I'm pretty sure there aren't 12 counties, so that will need furthar investigation.
+My knowledge of NI geography isn't great but I'm pretty sure there aren't 12 counties, so that will need further investigation.
 
 And why are there 7 options for central heating and 4 for whether the property has a garage?
 
@@ -339,6 +341,7 @@ properties_df["Capital Value Non-Exempt"] = pd.to_numeric(properties_df["Capital
 properties_df["Capital Value Exempt"] = pd.to_numeric(properties_df["Capital Value Exempt"])
 properties_df["Property Size"] = pd.to_numeric(properties_df["Property Size"])
 ```
+
 <h2><a name="Missing-data-and-what-can-be-fixed" href="#Missing-data-and-what-can-be-fixed">Missing data and what can be fixed</a></h2>
 <a href="#title">Back to top</a>
 
@@ -374,6 +377,9 @@ for item in properties_df.columns:
 
 There are quite a few values missing but for some columns such as Building Name and Sub-building Name that doesn't matter, it is to be expected. 52182 postcodes are missing though and I plan to use the postcodes for joining other data later. Fortunately we also have the full address which may have the postcode and there are only 1897 of those missing.
 
+<h2><a name="Filling-missing-postcodes" href="#Filling-missing-postcodes">Filling missing postcodes</a></h2>
+<a href="#title">Back to top</a>
+
 First lets get all the rows where the postcode is missing.
 
 
@@ -391,21 +397,21 @@ print(properties_df[rows_to_fix]["Property Address"].sample(n=15))
 pd.set_option('display.max_colwidth', 50)
 ```
 
-    65749     2 Bellevue, Ballyholme, Bangor BT20 5QJ,                                        
-    537729    8 Drumgoon Road, Drumgoon, Maguiresbridge, Enniskillen BT94 4PB,                
-    481941    15 Drumlegagh Road North, Largybeg, Newtownstewart, Omagh BT78 4HD,             
-    222026    69 Northwick Drive, Edenderry, Belfast BT14 7NJ,                                
-    722410    78 Main Street, Calmore, Tobermore, Magherafelt BT45 5PR,                       
-    431889    32 Irish Green Street, Newtown Limavady Alias Rathbrady Beg, Limavady BT49 9AE, 
-    702376    5 Laghey Cottages, Laghey, Dungannon BT71 6RH,                                  
-    163443    1 Barban Hill Terrace, Balleny, Dromore BT25 1TN,                               
-    499246    11 Bridgend Park, Ballycolman, Strabane BT82 9FY,                               
-    634044    Lock-Up Garage 8, N8 Garron Crescent, Antiville, Larne, Antrim,                 
-    712558    51 Coalisland Road, Killybracky, Dungannon BT71 6LA,                            
-    766162    10A New Road, Carrickastickan, Forkhill, Newry BT35 9RT,                        
-    39543     Lock Up Garage 3, N1a Barna Square, White House, Newtownabbey, Antrim,          
-    197661    Lock-Up Garage 2, N63 Lime Grove, Ballyblagh, Lurgan, Armagh,                   
-    416871    1 Culbidagh Court, Culbidag, Ballymena BT44 0TJ,                                
+    503872    64 Corramore Road, Muggalnagrow, Garrison, Enniskillen BT93 4BA,                            
+    761682    5 Ballylough Road, Ballylough, Castlewellan BT31 9NN,                                       
+    645857    15 Farm Lodge Park, Greenisland, West Division, Carrickfergus BT38 8YB,                     
+    44554     Lock Up Garage 4, N11 Glanroy Crescent, Croghfern, Newtownabbey, Antrim,                    
+    180153    31 Derry Park Lane, Derry, Lurgan, ARMAGH,                                                  
+    465221    Lock Up Garage 7, N22 Pine Street, Clooney, Londonderry, Londonderry,                       
+    61710     18 Forge Walk, Carrickmannan, Ballygowan, Newtownards BT23 6SX,                             
+    173713    5 Granville Road, Killycomain, Portadown, Craigavon BT63 5DN,                               
+    555853    The Manse, 55 Church Road, Boardmills, Carrickmaddyroe, Lisburn BT27 6UP,                   
+    720583    24 Gallion Way, Moneymore, Magherafelt BT45 7WF,                                            
+    582720    Apartment 1, 6 Seymour Street, Lisnagarvy, Lisburn BT27 4XF,                                
+    649206    Lock Up Garage 5, N44 Longfield Gardens, Greenisland, West Division, Carrickfergus, Antrim, 
+    206667    85 Carrigart Crescent, Tullygally, Craigavon BT65 5EG,                                      
+    703494    8 Elm Terrace, Gortshalgan, Dungannon BT71 6FP,                                             
+    317287    Flat 5A Moveen House, Benmore Drive, Finaghy, Ballyfinaghy, Belfast BT10 0EF,               
     Name: Property Address, dtype: object
     
 
@@ -421,11 +427,11 @@ fixed_postcodes.sample(n=5)
 
 
 
-    728948    BT34 4RL,
-    498679    BT82 8DQ,
-    711775    BT71 6JN,
-    108841    BT23 6PR,
-    577088    BT29 4WR,
+    692051    BT80 8JG,
+    700812    BT45 5FA,
+    560388    , Antrim,
+    451352    BT48 6AZ,
+    214131    BT60 1BT,
     Name: Property Address, dtype: object
 
 
@@ -440,11 +446,11 @@ fixed_postcodes.sample(n=5)
 
 
 
-    193121      Armagh
-    492704    BT48 8TF
-    678060    BT45 8RX
-    473909    BT81 7UF
-    158127    BT61 7QQ
+    523913    BT74 6BJ
+    762720    BT30 8RE
+    134245      Armagh
+    403140    BT47 4TD
+    372370     st Down
     Name: Property Address, dtype: object
 
 
@@ -460,11 +466,11 @@ fixed_postcodes.sample(n=5)
 
 
 
-    713551         NaN
-    673324    BT71 5AT
-    146208    BT71 7HD
-    155697    BT63 5FU
-    304502     BT5 6LA
+    469881    BT82 9QU
+    657810         NaN
+    261851    BT15 5AS
+    78977          NaN
+    718814    BT45 8PY
     Name: Property Address, dtype: object
 
 
@@ -501,6 +507,78 @@ print("Number of missing postcodes: " + str(properties_df["Postcode"].isnull().s
     
 
 Down to only 218 missing postcodes from 52,182. Not bad!
+
+<h2><a name="Filling-missing-towns" href="#Filling-missing-towns">Filling missing towns</a></h2>
+<a href="#title">Back to top</a>
+
+There are 16102 entris missing their town value. Similarly to postcodes this information is duplicated in the address
+
+
+```python
+pd.set_option('display.max_colwidth', -1)
+print(properties_df[rows_to_fix]["Property Address"].sample(n=15))
+#reset the max_colwidth to default
+pd.set_option('display.max_colwidth', 50)
+```
+
+    701988    42 Creenagh Bridge Road, Creenagh, Dungannon BT71 6EY,            
+    452375    35 Harding Street, Londonderry BT48 6SF,                          
+    754738    33 Carneyhough Court, Carneyhough, Newry BT34 2TW,                
+    759493    7 Heslips Court, Lisdrumliska, Newry BT35 8GR,                    
+    674650    41 School Road, Eskragh, Beltany, Newtownsaville, Omagh BT78 2SD, 
+    61476     Lock Up Garage 5, N12 Church Hill, Ballygowan, Down,              
+    532798    16 Knocknamoe Bungalows, Mullaghmore, Omagh BT79 7LA,             
+    407982    20 Neptune Crescent, Walworth, Ballykelly, Limavady BT49 9PY,     
+    694962    64 Ballyronan Road, Killyfaddy, Magherafelt BT45 6EW,             
+    78276     20 Cedarfield, Corporation, Bangor BT20 4WH,                      
+    42243     64 Rathmore Road, Dunadry, Rathbeg, Antrim BT41 2HX,              
+    441912    17 Woodend Meadow, Ballymagorry, Strabane BT82 0FB,               
+    122391    74 Rathmore Road, Carnalea, Bangor, Down, BT19 1NU,               
+    690347    24 Torrent Valley, Gortnaskea, Coalisland, Dungannon BT71 4FE,    
+    122179    15 Lynne Road, Carnalea, Bangor BT19 1NT,                         
+    Name: Property Address, dtype: object
+    
+
+It looks like we are in luck again and the property town is before the postcode, separated on either side by a space. We can't be sure this is always the case though so we should take some precautions.
+
+First select the rows missing the town and that has an address. Filter the property addresses for these values, split each on the space character and take the 4th element from the end in the subsequent list.
+
+
+```python
+rows_to_fix = properties_df["Town"].isnull() & properties_df["Property Address"].notnull()
+fixed_towns = properties_df[rows_to_fix]["Property Address"].apply(lambda x: str(x).split(" ")[-4])
+fixed_towns.sample(n=7)
+```
+
+
+
+
+    551489        Craigavon
+    649664    Carrickfergus
+    407828      Londonderry
+    23771        Ballyclare
+    600740        Craigavon
+    589701        Craigavon
+    24189        Ballyclare
+    Name: Property Address, dtype: object
+
+
+
+Next we want to check we actually got the right towns so filter the list by checking each value is already a town that appears in the data. Any that don't appear can be replaced with NaN. Finally add the fixed towns to the data!
+
+
+```python
+towns = properties_df["Town"].unique()
+right_rows = fixed_towns.isin(towns)
+fixed_towns[~right_rows] = np.nan
+properties_df.loc[rows_to_fix, 'Town'] = fixed_towns
+print("Number of missing towns: " + str(properties_df["Town"].isnull().sum()))
+```
+
+    Number of missing towns: 167
+    
+
+Great! Down to 167 from 16102.
 
 <h1><a name="Save-to-File" href="#Save-to-File">Save to File</a></h1>
 <a href="#title">Back to top</a>
