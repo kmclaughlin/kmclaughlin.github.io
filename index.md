@@ -6,9 +6,9 @@
 	<a href="NI_property_analysis#title" class="card">
 	  <div class="card">
 		<h2>Data Analysis of House Values in NI</h2>
-		<div name="cardImage">
-			<img name="cardImage" src="images/NI_properties.png?raw=true"/>
-			<!--img name="cardImage" src="images/Coming_soon_banner.png?raw=true"-->
+		<div class="cardImage">
+			<img class="cardImage" src="images/NI_properties.png?raw=true"/>
+			<!--img class="cardImage" src="images/Coming_soon_banner.png?raw=true"-->
 		</div>
 		<br>
 		<p>
@@ -22,9 +22,9 @@
 	<!--a href="Maze_robot_simulator#title" class="card"-->
 	  <div class="card">
 		<h2>Maze Robot Simulator</h2>
-		<div name="cardImage">
-			<img name="cardImage" src="images/maze_robot_sim.gif?raw=true"/>
-			<img name="cardImage" src="images/Coming_soon_banner.png?raw=true">
+		<div class="cardImage">
+			<img class="cardImage" src="images/maze_robot_sim.gif?raw=true"/>
+			<img class="cardImage" src="images/Coming_soon_banner.png?raw=true">
 		</div>
 		<br>
 		<p>
@@ -45,10 +45,10 @@
 <div class="card_container">
 	<!--a href="Open_robot_platform#title" class="card"-->
 	  <div class="card">
-		<h2>My Open Robot Platform</h2>
-		<div name="cardImage">
-			<img name="cardImage" src="images/robot_platform_animation.gif?raw=true"/>
-			<img name="cardImage" src="images/Coming_soon_banner.png?raw=true">
+		<h2>Robot Teaching Platform</h2>
+		<div class="cardImage">
+			<img class="cardImage" src="images/robot_platform_animation.gif?raw=true"/>
+			<img class="cardImage" src="images/Coming_soon_banner.png?raw=true">
 		</div>
 		<br>
 		<p>
