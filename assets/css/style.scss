@@ -115,10 +115,6 @@ img {
 	max-width:100%;
 }
 
-#comingSoon {
-  position: absolute;
-}
-
 header {
   width:270px;
   float:left;
@@ -344,5 +340,13 @@ a.card:hover, a.card:visited, a.card:link, a.card:active {
 	color: black;
 }
 
+img.cardImage {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
 
+div.cardImage {
+  position: relative;
+}
   
