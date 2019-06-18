@@ -23,7 +23,7 @@ I split my exploration into smaller categories for easier reading (be warned the
 
 	Diving into the cleaned data to see if there are any interesting discoveries near the surface.
 
-3. [Joining new Data](NI_property_analysis_joining_data#title)
+3. [Joining new Data - Coming Soon!](NI_property_analysis#title)
 
 	Where real discoveries are made is where you can join multiple datasets together. This dataset postcodes which can be used to join a host of geographical information.
 

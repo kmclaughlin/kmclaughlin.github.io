@@ -16,10 +16,11 @@
 	</a>
 </div>
 <div class="card_container">
-	<a href="Maze_robot_simulator#title" class="card">
+	<!--a href="Maze_robot_simulator#title" class="card"-->
 	  <div class="card">
 		<h2>Maze Robot Simulator</h2>
 		<img src="images/maze_robot_sim.gif?raw=true"/>
+		<img src="images/Coming_soon_banner.gif?raw=true" id="img2" />
 		<br>
 		<p>
 		A maze robot simulator built for the Queen's Robotics Society to help with the NI Robotics League maze competition. 
