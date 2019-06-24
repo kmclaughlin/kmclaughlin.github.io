@@ -237,7 +237,7 @@ for item in properties_df.columns:
 
 So we have 766,350 rows of 16 columns, seems about right for every house in Northern Ireland. There should be 766,350 unique addresses too but there are 2,465‬ too few.
 
-11 districts, 432 wards, 22472 streets. I know the districts is correct and the others look about right, though these will only be wards and streets with houses on them.
+11 districts, 432 wards, 22,472 streets. I know the districts is correct and the others look about right, though these will only be wards and streets with houses on them.
 
 My knowledge of NI geography isn't great but I'm pretty sure there aren't 12 counties, so that will need further investigation.
 
@@ -294,7 +294,7 @@ print("Unique towns after: " + str(properties_df["Town"].nunique()))
 
 As expected that cleaned up the towns nicely too.
 
-The last one that looks off is the central heating and the garage columns. They are small enough that we can look and the unique values directly.
+The last one that looks off is the central heating and the garage columns. They are small enough that we can look at the unique values directly.
 
 
 ```python
@@ -327,7 +327,7 @@ print("Garage: " + str(properties_df["Garage"].unique()))
     
 
 
-Looking back at the table of unique values per column we also printed the data type. Most are objects as expected for strings but Capital Value Non-Exempt, Capital Value Exempt and Property Size should all be numeric. Lets fix that. First the commas in the numbers need removed and " Square Metres" needs dropped from the property size column. Then they can be converted to numeric.
+Looking back at the table of unique values per column we also printed the data type. Most are objects as expected for strings but Capital Value Non-Exempt, Capital Value Exempt and Property Size should all be numeric. First the commas in the numbers need removed and " Square Metres" needs dropped from the property size column. Then they can be converted to numeric.
 
 
 
@@ -375,7 +375,7 @@ for item in properties_df.columns:
     Garage                       841
     
 
-There are quite a few values missing but for some columns such as Building Name and Sub-building Name that doesn't matter, it is to be expected. 52182 postcodes are missing though and I plan to use the postcodes for joining other data later. Fortunately we also have the full address which may have the postcode and there are only 1897 of those missing.
+There are quite a few values missing but for some columns such as Building Name and Sub-building Name that doesn't matter, it is to be expected. 52,182 postcodes are missing though and I plan to use the postcodes for joining other data later. Fortunately we also have the full address which may have the postcode and there are only 1,897 of those missing.
 
 <h2><a name="Filling-missing-postcodes" href="#Filling-missing-postcodes">Filling missing postcodes</a></h2>
 <a href="#title">Back to top</a>
@@ -415,7 +415,7 @@ pd.set_option('display.max_colwidth', 50)
     Name: Property Address, dtype: object
     
 
-For those that have postcodes they seem to be always at the end of the address followed by a comma. Postcodes are annoying to work with as they aren't fixed length and can have a space or not a space. For this we will rely on the format of the address being relatively consistent and strip the postcode from the end then check it looks like a postcode rather than resorting to complex regex. At least I can count on all Northern Ireland postcodes starting with BT which is nice.
+For those that have postcodes they seem to be always at the end of the address followed by a comma. Postcodes are annoying to work with as they aren't fixed length and can have a space or not a space. For this we will rely on the format of the address being relatively consistent. Strip the postcode from the end then check if it looks like a postcode, rather than resorting to complex regex. At least I can count on all Northern Ireland postcodes starting with BT which is nice.
 
 
 ```python
@@ -511,7 +511,7 @@ Down to only 218 missing postcodes from 52,182. Not bad!
 <h2><a name="Filling-missing-towns" href="#Filling-missing-towns">Filling missing towns</a></h2>
 <a href="#title">Back to top</a>
 
-There are 16102 entris missing their town value. Similarly to postcodes this information is duplicated in the address
+There are 16,102 entries missing their town value. Similarly to postcodes this information is duplicated in the address
 
 
 ```python
@@ -541,7 +541,7 @@ pd.set_option('display.max_colwidth', 50)
 
 It looks like we are in luck again and the property town is before the postcode, separated on either side by a space. We can't be sure this is always the case though so we should take some precautions.
 
-First select the rows missing the town and that has an address. Filter the property addresses for these values, split each on the space character and take the 4th element from the end in the subsequent list.
+First select the rows missing the town and that has an address. Filter the property addresses for these values, split each on the space character and take the 4<sup>th</sup> element from the end in the subsequent list.
 
 
 ```python
@@ -578,7 +578,7 @@ print("Number of missing towns: " + str(properties_df["Town"].isnull().sum()))
     Number of missing towns: 167
     
 
-Great! Down to 167 from 16102.
+Great! Down to 167 from 16,102.
 
 <h1><a name="Save-to-File" href="#Save-to-File">Save to File</a></h1>
 <a href="#title">Back to top</a>
@@ -591,4 +591,4 @@ properties_df.to_csv("DomesticPropertyValue 16 row cleaned.csv")
 ```
 
 
-<a href="#NI_property_analysis_initial_exploration#title">Next Section - Initial Exploration</a>
+[Next Section - Initial Exploration](NI_property_analysis_initial_exploration#title)
