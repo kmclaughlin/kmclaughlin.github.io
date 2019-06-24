@@ -459,4 +459,4 @@ It looks like that cluster of cheaper properties are outbuildings, caravans, gar
 I want to dig furthern into property value and how it relates to geographic area. We are working with some coarse geographic data separating by town but we can do much better. Enter the postcode. You can find out a lot of information about an area from its postcode and those postcode areas are quite small. There are 42,000 unique postcodes in our data averaging 18 houses per postcode. Let's grab some postcode data and join it to see what else we can find.
 
 
-[Next Section - Joining New Data](#NI_property_analysis_joining_data#title)
+[Next Section - Joining New Data](NI_property_analysis_joining_data#title)
