@@ -589,3 +589,6 @@ Save this to file so we don't have to run all this everytime we restart the kern
 ```python
 properties_df.to_csv("DomesticPropertyValue 16 row cleaned.csv")
 ```
+
+
+<a href="#NI_property_analysis_initial_exploration#title">Next Section - Initial Exploration</a>

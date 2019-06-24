@@ -23,6 +23,7 @@ Data analysis is a tricky thing. It is easy to make assumptions about the data a
     3. [House Value per m<sup>2</sup>by Town](#House-Value-per-m2-by-Town)
     4. [Named Properties](#Named-Properties)
     5. [Comparing House Value and Property Size](#Comparing-House-Value-and-Property-Size)
+    . [Digging Further](#Digging-Further)
 <p></p>
 
 <h1><a name="Loading-the-Data" href="#Loading-the-Data">Loading the Data</a></h1>
@@ -257,7 +258,7 @@ axes.set(ylabel="", xlabel="Median House Value /£")
 
 Interesting to see Belfast solidly middle of the pack this time and Derry has fallen near the bottom. 
 
-<h2><a name="House-Value-per-m2-by-Town" href="#House-Value-per-m2-by-Town">House Value per m<sup>2</sup>by Town</a></h2>
+<h2><a name="House-Value-per-m2-by-Town" href="#House-Value-per-m2-by-Town">House Value per m<sup>2</sup> by Town</a></h2>
 <a href="#title">Back to top</a>
 
 More telling would be to combine the two values and get a median price per m<sup>2</sup> which would give a kind of desireability rating for the town/city.
@@ -386,13 +387,6 @@ axes.set(ylabel="", xlabel="Percentage of Properties with a Unique Name")
 ```
 
 
-
-
-    [Text(0, 0.5, ''), Text(0.5, 0, 'Percentage of Properties with a Unique Name')]
-
-
-
-
 ![png](images/output_23_1.png)
 
 
@@ -415,12 +409,6 @@ sns.boxplot(y= properties_df[size_rows]['Property Size'], ax=axes[1])
 
 
 
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x2a029c69c88>
-
-
-
-
 ![png](images/output_26_1.png)
 
 
@@ -437,16 +425,6 @@ f, axes = plt.subplots(1, 2, figsize=(14, 5))
 sns.violinplot(y= properties_df[value_rows]['Value'], ax=axes[0])
 sns.violinplot(y= properties_df[size_rows]['Property Size'], ax=axes[1])
 ```
-
-    C:\Users\Kevin\Anaconda3\envs\CSC3062\lib\site-packages\scipy\stats\stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
-      return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
-    
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x2a02a8fdb00>
-
 
 
 
@@ -475,3 +453,10 @@ properties_df[properties_df['Value'] < 2000]['Description'].unique()
 It looks like that cluster of cheaper properties are outbuildings, caravans, garages etc which seems reasonable.
 
 
+<h1><a name="Digging-Further" href="#Digging-Further">Digging Further</a></h1>
+<a href="#title">Back to top</a>
+
+I want to dig furthern into property value and how it relates to geographic area. We are working with some coarse geographic data separating by town but we can do much better. Enter the postcode. You can find out a lot of information about an area from its postcode and those postcode areas are quite small. There are 42,000 unique postcodes in our data averaging 18 houses per postcode. Let's grab some postcode data and join it to see what else we can find.
+
+
+<a href="#NI_property_analysis_joining_data#title">Next Section - Joining New Data</a>

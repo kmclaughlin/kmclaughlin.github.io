@@ -13,7 +13,7 @@ The Land and Property Service NI keeps a searchable dataset of all the domestic 
 
 ![png](images/house_data_sample.png)
 
-I split my exploration into smaller categories for easier reading (be warned the posts can be quite long!) and to make it easier to add new sections if I come back to this in the future. Obviously it is all interesting but if care more about the destination than the journey skip down to section 4 that's where the good stuff is.
+I split my exploration into smaller categories for easier reading (be warned the posts can be quite long!) and to make it easier to add new sections if I come back to this in the future. Obviously it is all interesting but if you care more about the destination than the journey skip down to section 4, that's where the good stuff is.
 
 1. [Data Cleanup](NI_property_analysis_cleaning#title)
 
@@ -23,7 +23,7 @@ I split my exploration into smaller categories for easier reading (be warned the
 
 	Diving into the cleaned data to see if there are any interesting discoveries near the surface.
 
-3. [Joining new Data - Coming Soon!](NI_property_analysis#title)
+3. [Joining New Data](NI_property_analysis_joining_data#title)
 
 	Where real discoveries are made is where you can join multiple datasets together. This dataset postcodes which can be used to join a host of geographical information.
 
